@@ -1,0 +1,25 @@
+What new skills have you learned?
+Familiarity with the basics and implementation of HTML has been the major takeaway.
+Also slowly and steadilty I am getting aquainted and starting to reason as to How Actually Web works...?
+
+What has been easy?
+HTML syntax is quite easy to undersatnd ,implement and test.On top of that HTML documentation be it MDN ,
+W3schools etc is pretty comprehensible.
+
+What has been difficult?
+As of now I did not face any major difficulties.Initially searching
+for HTML elements to solve problem sets took slightly more time but became
+relatively easy as I went through more moreproblems
+
+How have you used the problem solving strategies from the first project to overcome challenges so far?
+Growth Minset has been a real helper. I am not saying it for the sake of writing it here but believe me
+it has contributed immensely towards my problem solving flow right from the beginning till now.
+
+The habit of looking up forums for help and feedback has also been helpful in cases when I alone
+was not able to fiure out solutions.
+
+Last but not the least learning from my mistakes also prevented me from repeating my initially commited 
+mistakes in the later problems.
+
+
+ 
