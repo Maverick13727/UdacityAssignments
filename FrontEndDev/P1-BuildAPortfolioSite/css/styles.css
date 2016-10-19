@@ -1,0 +1,229 @@
+* {
+   /*outline: 1px solid red !important;*/
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+
+figure {
+  margin: auto 0;
+}
+
+/*logo styling*/
+.logo {
+  height: 80px;
+  margin: auto;
+}
+
+.logo_image {
+  /*margin-top: 5%;
+  margin-bottom: 5%;*/
+  max-width: 100%;
+}
+
+.author_name_container {
+  display:block;
+}
+
+.author_name {
+  margin-left: auto;
+  margin-bottom: 0;
+  font-family: "Lora", serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.author_details {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  margin-top: 0;
+  text-align: right;
+}
+
+/*horizontal separator styling*/
+.horizonalSeparator_header {
+  width: 100%;
+  border: 2px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*portfolio cover image styling*/
+
+.portfolio_cover_image {
+  max-width: 100%;
+}
+
+/*styling project */
+.project_header {
+  font-family: "Black Ops One", cursive;
+  font-size: 30px;
+}
+
+.project_image_1 {
+  max-width: 100%;
+}
+
+.project_image_2 {
+  max-width: 100%;
+}
+
+.project_image_3 {
+  max-width: 100%;
+}
+
+.project_image_caption_1 {
+  text-align: left;
+}
+
+.project_image_caption_header  {
+  text-transform: uppercase;
+  font-family: "Coda", cursive;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.project_image_caption_details {
+  margin: 0;
+}
+
+/*styling footer*/
+.social {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.fa {
+  padding-right: 10px;
+}
+.horizonalSeparator_footer {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+.footer_header_caption  {
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+}
+
+/*grid-layout*/
+.row {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.66666667%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66666667%;
+}
+
+.col-7 {
+  width: 58.33333333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66666667%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66666667%;
+}
+
+.col-1 {
+  width: 8.33333333%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  position: relative;
+}
+
+/*Media Queries*/
+/*Major Breakpoints*/
+/* Small Viewports*/
+@media (max-width: 580px) {
+  .author_name {
+    max-width: 100%;
+  }
+
+  .project {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+
+  .project_1, .project_2, .project_3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+}
+
+/* Medium Viewports*/
+@media (min-width: 581px) and (max-width: 979px){
+  .container {
+
+  }
+
+  .project_1, .project_2 {
+      margin-right: 10px;
+  }
+
+  .project_3 {
+    margin-top: 10px;
+  }
+}
+
+/* Large Viewports */
+@media (min-width: 980px) {
+  .container {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .project_1, .project_2 {
+      margin-right: 10px;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Adding fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- font icon link  -->
+    <script src="https://use.fontawesome.com/cb5c638ad2.js"></script>
+  </head>
+
+  <body class="container">
+    <!-- header -->
+    <header class="header row">
+      <!-- author-logo -->
+      <div class="logo col-6">
+        <div class="logo">
+          <img class="logo_image" src="images/logo-80_small_1x.png" alt="portfolio logo">
+        </div>
+      </div>
+      <!-- author-info -->
+      <div class="author col-6">
+        <div class="author_name_container">
+          <h2 class="author_name">PRATEEK PANDEY</h2>
+        </div>
+        <div class="author_details_container">
+          <h4 class="author_details">FRONT END NINJA</h4>
+        </div>
+      </div>
+      <!-- separator -->
+      <div class="horizonalSeparator row">
+        <hr class="horizonalSeparator_header">
+      </div>
+    </header>
+
+    <!-- main content -->
+    <main class="main">
+      <article class="portfolio">
+          <div class=" portfolio_main row">
+            <!-- portfolio cover image -->
+            <div class="portfolio_cover col-12">
+              <picture>
+                <source media="(max-width: 360px)" srcset="images/main-340_small_1x.jpg">
+                <source media="(min-width: 361px) and (max-width: 580px)" srcset="images/main-580_medium_1x.jpg">
+                <source media="(min-width: 581px)" srcset="images/main-950_large_1x.jpg">
+                <img class="portfolio_cover_image" src="images/main-580_medium_1x.jpg" alt="Portfolio Cover Image">
+            </picture>
+            </div>
+          </div>
+          <!-- projects -->
+        <section class="project">
+          <div class="project_header_container">
+            <!-- project header -->
+            <h3 class="project_header row">Featured Work</h3>
+          </div>
+          <!-- project list -->
+          <div class="project_list row">
+            <!-- project 1 -->
+            <section class="project_1">
+              <figure class="project_container_1">
+                <img class="project_image_1" src="images/html-310_small_1x.jpg">
+                <figcaption class="project_image_caption_1">
+                  <p class="project_image_caption_header">HTML</p>
+                  <p class="project_image_caption_details"><a href="#">https://github.com/Maverick/html</a></p>
+                </figcaption>
+              </figure>
+            </section>
+            <!-- project 2 -->
+            <section class="project_2">
+              <figure class="project_container_2">
+                <img class="project_image_2" src="images/css-310_small_1x.jpg">
+                <figcaption class="project_image_caption_1">
+                  <p class="project_image_caption_header">CSS</p>
+                  <p class="project_image_caption_details"><a href="#">https://github.com/Maverick/css</a></p>
+                </figcaption>
+              </figure>
+            </section>
+            <!-- project 3 -->
+            <section class="project_3">
+              <figure class="project_container_3">
+                <img class="project_image_3" src="images/js-310_small_1x.jpg">
+                <figcaption class="project_image_caption_1">
+                  <p class="project_image_caption_header">JS</p>
+                  <p class="project_image_caption_details"><a href="#">https://github.com/Maverick/js</a></p>
+                </figcaption>
+              </figure>
+            </section>
+          </div>
+        </section>
+      </article>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="horizonalSeparator row">
+        <hr class="horizonalSeparator_footer">
+      </div>
+      <div class="footer_header">
+        <h3 class="footer_header_caption row">FOLLOW ME</h3>
+      </div>
+      <ul class="social row" >
+        <li><a class="fa fa-facebook" aria-hidden="true" href="#"></a></li>
+        <li><a class="fa fa-twitter" aria-hidden="true" href="#"></a></li>
+        <li><a class="fa fa-linkedin" aria-hidden="true" href="#"></a></li>
+        <li><a class="fa fa-github" aria-hidden="true" href="#"></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
