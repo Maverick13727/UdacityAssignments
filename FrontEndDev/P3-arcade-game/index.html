@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customStyle.css">
+    <!-- font-import -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+</head>
+<body>
+    <body class="container">
+        <!-- header -->
+        <header class="header row">
+          <div class="title-div col-12">
+            <h1 class="title"> Classic Arcade Game Clone </h1>
+          </div>
+        </header>
+        <main class="main">
+          <article class="conatiner row">
+            <!-- LEFT -->
+            <div class="left col-3">
+              <h2 class="score"> SCORE:
+                  <span class="score-val">0</span>
+              </h2>
+              <hr>
+              <h2 class="time"> TIME LEFT:
+                  <span id="timer" class="time-val">30</span>
+              </h2>
+              <div class="rules-div">
+                <h3 class="game-rules">GAME RULES</h3>
+                <ul class="rules-lst">
+                </ul>
+              </div>
+            </div>
+            <!-- CENTRE -->
+            <div id="centreBox" class="centre col-7">
+            </div>
+            <!-- RIGHT -->
+            <div class="right col-2">
+              <div class="button-start-div">
+                  <button class="button-start">START</button>
+              </div>
+            </div>
+          </article>
+        </main>
+        <section class="end row">
+          <div class="game-over-div">
+            <h2 class="game-over"> GAME OVER</h2>
+          </div>
+          <h2 class="time"> FINAL SCORE:
+            <span class="final-score-val">0</span>
+          </h2>
+          <div class="button-start-div">
+              <button class="button-restart">RESTART</button>
+          </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer row">
+        </footer>
+    <script src="js/jQuery.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
