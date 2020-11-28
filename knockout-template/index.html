@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Cat-Clicker</title>
+  </head>
+  <body>
+    <article>
+      <ul class="cat-list" data-bind="foreach: catList">
+        <li data-bind="text: $data.name, click: $parent.setCat"></li>
+      </ul>
+      <section class="display-area" data-bind="with: currentCat">
+        <!-- declarative bindings : connecting view to model via viewModel-->
+        <h2 class="cat-header" data-bind="text: name"></h2>
+        <img class="cat-image" src="" alt="cat image" data-bind="click: $parent.addClicks, attr: {src: image}">
+        <p class="cat-clicks" data-bind="text: clicks"></p>
+        <h3 class="NickNames">NickNames</h3>
+          <!-- Control FLow : foreach Binding -->
+          <ul class="cat-nicknames" data-bind="foreach: nickNames">
+            <li data-bind="text: $data"></li>
+          </ul>
+      </section>
+
+    </article>
+    <script src="lib/knockout-3.2.0.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

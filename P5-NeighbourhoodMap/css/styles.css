@@ -1,0 +1,60 @@
+html, body {
+	font-family: Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#map { 
+	height: 70% 
+}
+.container {
+	height: 100%;
+}
+.modal-dialogue--responsive {
+    width: 50%;
+    left: 25%;
+    position: relative;
+    margin: 0;
+}
+.modal-header--padding {
+	padding-bottom: 0;
+}
+.modal-title {
+	display: inline-block;
+	line-height: 1.42857143;
+	text-align: center;
+	width: 85%;
+}
+.modal-close {
+	margin: 10px;
+}
+.modal-body--formatter {
+	overflow-y: scroll; 	
+}
+.modal-title--formatter {
+	font-size: 20px;
+	font-style: oblique;
+	text-transform: capitalize;
+}
+.media-wiki {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-container {
+    	display: inline-block;
+		width: auto;
+		line-height: 3.428571;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search-container {
+    	display: inline-block;
+		width: auto;
+		line-height: 3.428571;
+    }
+    .navbar-form {
+    	padding: 0 0;
+    }
+}

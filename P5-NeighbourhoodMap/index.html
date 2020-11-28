@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Neighbourhood Map: Lucknow</title>
+        <!-- bootstrap css-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- css reference -->
+	   	<link rel='stylesheet' href='css/styles.css'>
+ 	</head>
+ 	<body>
+ 		<div class='container'>
+	 	 	<div class='header clearfix'>
+		 	 	<form class="navbar-form navbar-left" role="search">
+			  		<div class="form-group">
+			   	 		<input type="text" class="form-control search-container" placeholder="Filter" data-bind="textInput: locationString, event: {keyup: updateListBox}">
+			   	 		<button type="button" class="btn btn-primary" data-bind="click: resetFilterDropDrown">Reset</button>
+			   	 		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="	#about-modal" data-bind="click: getCityData">About</button>
+				  	</div>
+				</form>
+				<div class="modal fade" id="about-modal">
+					<div class="modal-dialog modal-dialogue--responsive" role="document">
+						<div class="modal-content">
+						  <div class="modal-header modal-header--padding">
+						    <h5 class="modal-title modal-title--formatter">Lucknow -- The City of Nawabs</h5>
+						    <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+						      <span aria-hidden="true">&times;</span>
+						    </button>
+						    <div><p class="media-wiki ">Ref: Media Wiki<p></div>
+						  </div>
+						  <div class="modal-body modal-body--formatter" data-bind='foreach: factList'>
+						    <p data-bind='text:$data'></p>
+						  </div>
+						  <div class="modal-footer">
+						    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+	 	 	<div class="list-group" data-bind="foreach: locationList">
+			  	<button type="button" class="list-group-item" data-bind="text: $data.title, click: $parent.onClick"></button> 							
+			</div>
+			<div id='map'></div>
+   		</div>
+
+   		<!-- knockout library -->
+		<script src="lib/knockout-3.2.0.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- bootstrap js-->
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+	   	<!-- js reference -->
+	   	<script src="app.js"></script>
+		<!-- Load the JS API ASYNCHRONOUSLY -->
+		<script async defer onerror="onError()" src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyD4Cn7c5TEn8Y67IE5xaB8uhQyoS86xAuQ&v=3&callback=initMap"></script>
+ 	</body>
+</html>
