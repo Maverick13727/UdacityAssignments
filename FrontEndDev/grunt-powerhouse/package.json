@@ -1,0 +1,25 @@
+{
+  "name": "my-grunt-utilities",
+  "version": "1.0.0",
+  "description": "grunt utilities for making dev easy and entertaining",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Maverick13727"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Prateek",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-mkdir": "^1.0.0",
+    "grunt-responsive-images": "^0.1.9"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "gulp-utility",
+  "version": "1.0.0",
+  "description": "saving dependencies for gulp utility",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-critical-css": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-uglify": "^2.0.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-image-optimization": "^0.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maverick13727/gulp-start.git"
+  },
+  "author": "prateek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maverick13727/gulp-start/issues"
+  },
+  "homepage": "https://github.com/Maverick13727/gulp-start#readme"
+}
